@@ -1,4 +1,4 @@
-{/*useEffect is a React Hook that lets you synchronize a component with an external system.*/}
+
 import { useEffect, useState } from "react";
 import Book from "./book";
 import axios from "axios";
@@ -10,6 +10,7 @@ function Read(){
 
 
         const [data, setData] = useState([]);
+  {/*useEffect is a React Hook that lets you synchronize a component with an external system.*/}
     useEffect(() => {
         {/* To make a http get call that will return the json data from and assign it to the component state. Use the react hook useState:.*/}
         axios.get('https://jsonblob.com/api/jsonblob/1161593332966481920')
